@@ -16,3 +16,8 @@ describe IntegerToHuman do
   end
 end
 ```
+
+# Goals
+
+- Focus on red/green cycles, refactoring to get the next test passing.
+- Learn how to spot edge cases in your design.
