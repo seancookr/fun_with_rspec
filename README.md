@@ -1,6 +1,6 @@
 # Fun with RSpec (An intro to TDD)
 
-Converting integers to human readable strings is a very well defined problem. We know ahead of time the goal, and thus, we are able to easily create failing tests because the objective of the code is clear. It is as simple as starting with the first test.
+Converting integers to human readable strings is a very well defined problem. We know ahead of time the goal, and thus, we are able to easily create failing tests because the objective of the code we are trying to create is clear. It is as simple as starting with the first test.
 
 ```ruby
 require 'spec_helper'
