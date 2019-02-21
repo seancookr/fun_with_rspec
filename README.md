@@ -17,6 +17,12 @@ describe IntegerToHuman do
 end
 ```
 
+
+Running Tests
+```bash
+$ bundle exec rspec --format documentation
+```
+
 # Goals
 
 - Focus on red/green cycles, refactoring to get the next test passing.
