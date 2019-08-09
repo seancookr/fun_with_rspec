@@ -2,6 +2,8 @@
 
 Converting integers to human readable strings is a very well defined problem. We know ahead of time the goal, and thus, we are able to easily create failing tests because the objective of the code we are trying to create is clear. It is as simple as starting with the first test.
 
+this code should work for all numbers up to and including 2147483648
+
 ```ruby
 require 'spec_helper'
 require './lib/integer_to_human'
