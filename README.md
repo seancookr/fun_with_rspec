@@ -28,4 +28,4 @@ $ bundle exec rspec --format documentation
 # Goals
 
 - Focus on red/green cycles, refactoring to get the next test passing.
-- Learn how to spot edge cases in your design.
+- Learn how to identify boundry conditions in the problem and the special edge cases
