@@ -2,7 +2,7 @@
 
 Converting integers to human readable strings is a very well defined problem. We know ahead of time the goal, and thus, we are able to easily create failing tests because the objective of the code we are trying to create is clear. It is as simple as starting with the first test.
 
-To be considered a correct solution, this method should work correctly for all integers up to and including 2147483648.
+To be considered a correct solution, this method should work correctly for all integers up to and including 2147483648 (althought theoreitcally this should be much higher).
 
 ```ruby
 require 'spec_helper'
