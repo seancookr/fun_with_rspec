@@ -12,9 +12,14 @@ class IntegerToHuman
       elsif integer < 100
         div, mod = integer.divmod(10)
         TENS[div] + (mod.zero? ? '' : "-#{to_human(mod)}")
-      else
+      elsif integer < 1000
         div, mod = integer.divmod(100)
         SMALL[div] + ' hundred' + (mod.zero? ? '' : ' and ' + to_human(mod))
+      elsif integer < 1_000_000
+        div, mod = integer.divmod(1000)
+        to_human(div).gsub(' and ', ' ') + ' thousand' + (mod.zero? ? '' : (mod < 100 ? ' and ' : ' ') + to_human(mod))
+      else
+        'one million'
       end
     end
   end

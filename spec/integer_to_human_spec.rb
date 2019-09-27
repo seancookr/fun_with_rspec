@@ -28,6 +28,19 @@ describe IntegerToHuman do
         it { expect(subject.to_human(145)).to eq 'one hundred and forty-five' }
         it { expect(subject.to_human(987)).to eq 'nine hundred and eighty-seven' }
       end
+
+      context 'under 1 million' do
+        it { expect(subject.to_human(1000)).to eq 'one thousand' }
+        it { expect(subject.to_human(1001)).to eq 'one thousand and one' }
+        it { expect(subject.to_human(1101)).to eq 'one thousand one hundred and one' }
+        it { expect(subject.to_human(2000)).to eq 'two thousand' }
+        it { expect(subject.to_human(6545)).to eq 'six thousand five hundred and forty-five' }
+        it { expect(subject.to_human(30_000)).to eq 'thirty thousand' }
+        it { expect(subject.to_human(31_000)).to eq 'thirty-one thousand' }
+        it { expect(subject.to_human(999_999)).to eq 'nine hundred ninety-nine thousand nine hundred and ninety-nine' }
+      end
+
+      it { expect(subject.to_human(1_000_000)).to eq 'one million' }
     end
   end
 
